@@ -1,0 +1,185 @@
+body {
+    background-color: yellow;
+
+}
+h1 {
+    text-align: center;
+}
+a {
+    color: brown;
+    font-size:  35px;
+}
+p {
+    text-align: center;
+}
+#o1  a {
+    color: blue;
+}
+.oo1 {
+    width: 100px;
+    height: 100px;
+    transition:all, 4s;
+    background-color: rgb(80, 194, 80);
+    margin-top: 30px;
+}
+.class1{
+    display: flex;
+    justify-content: center;
+    
+}
+.oo1:hover {
+    width: 300px;
+
+}
+#oo2 {
+    width: 100px;
+    height: 100px;
+    transition: all,4s;
+    background-color: rgb(80, 194, 80);
+    margin-top: 30px;
+
+}
+#oo2:hover {
+    width: 300px;
+    height: 300px;
+}
+.class2 {
+    display: flex;
+    justify-content:space-around;
+     align-items: center;
+    
+
+}
+.item {
+    display: flex;
+    justify-content:space-between;
+}
+#oo1 {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: rgb(41, 41, 106);
+    animation-name: clll;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: 5s;
+    animation-direction: alternate;
+}
+@keyframes clll {
+    from { transform: skew(20deg);}
+    to { transform: skew(-20deg);}
+}
+
+.item1 {
+    display: flex;
+    justify-content:space-between;
+}
+
+.item2 {
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+
+#oo3 {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: rgb(145, 145, 210);
+    animation-name: cll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: 2s;
+    animation-direction: alternate-reverse;
+
+}
+@keyframes cll {
+    from { transform: skewY(-20deg);}
+    to { transform: skewY(20deg);}
+}
+
+#oo4 {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: rgb(84, 139, 207);
+    animation-name: cl;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: 2s;
+}
+@keyframes cl {
+    from { transform: rotate(-180deg);}
+    to { transform: rotate(180deg);}
+}
+
+.item3 {
+    display: flex;
+    justify-content:space-between;
+    animation-duration: 3s;
+
+    animation-iteration-count: infinite;
+
+    
+
+}
+.item4 {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    animation-duration: 3s;
+
+    animation-iteration-count: infinite;
+
+
+}
+#oo5 {
+    width: 100px;
+    height: 100px;
+    background-color:rgb(79, 117, 199) ;
+    animation-name: fool;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: 5s;
+    animation-direction: alternate;
+
+}
+@keyframes fool { 
+   from { transform:rotateX(70deg);
+}
+to { transform:rotateX(0deg);
+}
+}
+
+#oo6 {
+    background-color: brown;
+    animation-name: fol;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: 5s;
+    animation-direction: alternate;
+    
+}
+@keyframes fol {
+   from { transform: rotateY(70deg);}
+   to { transform: rotateX(0deg);}
+
+}
+#oo7 {
+    background-color:green ;
+    animation-name: fl;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: 3s;
+    animation-direction: alternate-reverse;
+    
+}
+@keyframes fl {
+   from { transform: rotate(45deg);}
+   to { transform:rotate(-45deg);
+   }
+    
+}
+
+

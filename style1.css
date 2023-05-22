@@ -1,0 +1,126 @@
+#o2{
+    background-color: orange;
+    z-index: 1;
+
+}
+#o3{ 
+    background-color: white;
+    z-index: 1;
+
+}
+#o4{
+    background-color: green;
+    z-index: 1;
+
+}
+#o2, #o3,#o4{
+    font-size: 50px;
+}
+p {
+    text-align: center;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.sky{
+    height: 100vh;
+    width: 100%;
+    background-image: url("sky.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+    border-left: 10px solid green;
+    border-right: 10px solid brown;
+}
+.road {
+    position: absolute;
+    height: 200px;
+    width: 500%;
+    background-image: url("road.jpg");
+    display: block;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    animation: road 5s linear infinite;
+    background-repeat: repeat-x;
+}
+@keyframes road {
+    100% { transform:translateX(-3400px);}
+
+}
+.city {
+    position: absolute;
+    height: 200px;
+    width: 500%;
+    background-image: url("city.png");
+    display: block;
+    bottom:200px;
+    left: 0;
+    z-index: 1;
+    animation: city 5s linear infinite;
+    background-repeat: repeat-x;
+}
+@keyframes city {
+    100% { transform:translateX(-2900px);}
+
+}
+.car {
+    position: absolute;
+    width: 400px;
+    display: block;
+    bottom:100px;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+
+}
+.car img {
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+@keyframes car {
+    100% { transform: translateY(-1px);}
+    50% { transform: translateY(1px);}
+    0% { transform: translateY(-1px);}
+}
+.wheel {
+    left: 50%;
+    bottom: 175px;
+    z-index: 2;
+    position: absolute;
+    transform: translateX(-50%);
+
+}
+.wheel img {
+    width: 72px;
+    height: 72px;
+    animation: wheel 1s linear infinite;
+}
+
+.wheel2{
+    left: 80px;
+    position: absolute;
+
+}
+.wheel1{
+    left: -165px;
+    position: absolute;
+
+}
+@keyframes wheel {
+    100% {transform: rotate(360deg);}
+}
+.sun {
+    float:left;
+    margin-left: 80%;
+    position: absolute;
+}
+.flag {
+    position: absolute;
+    left:57%;
+    bottom: 23%;
+    z-index: 2;
+    
+}
